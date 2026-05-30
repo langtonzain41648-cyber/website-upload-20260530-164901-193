@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>站内搜索-高分电视剧大全-高分剧集排行榜-全集高清在线播放</title>
+    <meta name="description" content="高分电视剧大全页面按口碑整理优质剧集，覆盖多题材和多地区内容，便于查看高分剧集。">
+    <meta name="keywords" content="高分电视剧大全,高分剧集排行榜,全集播放,高分电视剧,口碑剧集,剧集榜单,精选电视剧">
+    <meta name="theme-color" content="#16a34a">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a class="site-logo" href="./index.html" aria-label="高分剧集大全">
+                <span class="logo-mark">剧</span>
+                <span>高分剧集大全</span>
+            </a>
+            <button class="menu-toggle" type="button" aria-label="展开导航">☰</button>
+            <nav class="main-nav" aria-label="主导航">
+            <a href="./index.html">首页</a>
+            <a href="./categories.html">分类</a>
+            <a href="./rankings.html">排行榜</a>
+            <a class="active" href="./search.html">搜索</a>
+            </nav>
+            <form class="top-search" action="./search.html" method="get">
+                <input type="search" name="q" placeholder="搜索高分剧集" aria-label="搜索高分剧集">
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero soft search-hero">
+            <p class="eyebrow green">站内搜索</p>
+            <h1>搜索高分电视剧与口碑剧集</h1>
+            <p>输入剧名、年份、地区、类型或标签，快速查找想看的内容。</p>
+            <form class="wide-search search-page-form" action="./search.html" method="get">
+                <input id="search-input" type="search" name="q" placeholder="输入关键词搜索" autofocus>
+                <button type="submit">搜索</button>
+            </form>
+        </section>
+        <section class="section-wrap">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow green">搜索结果</p>
+                    <h2 id="search-title">开始搜索</h2>
+                </div>
+                <a href="categories.html">浏览全部分类 →</a>
+            </div>
+            <div id="search-results" class="movie-grid compact-grid"></div>
+            <div id="search-empty" class="empty-state">输入关键词，探索更多精彩内容。</div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <a class="footer-logo" href="./index.html">高分剧集大全</a>
+                <p>聚合高分电视剧、口碑剧集与精选影视内容，按题材、地区和热度整理，方便快速浏览与播放。</p>
+            </div>
+            <div>
+                <h2>快速导航</h2>
+                <a href="./index.html">首页</a>
+                <a href="./categories.html">分类总览</a>
+                <a href="./rankings.html">高分排行榜</a>
+                <a href="./search.html">站内搜索</a>
+            </div>
+            <div>
+                <h2>剧集分类</h2>
+                <a href="./category-featured-drama.html">精选高分剧</a>
+                <a href="./category-word-of-mouth.html">口碑热播榜</a>
+                <a href="./category-complete-hd.html">全集高清库</a>
+                <a href="./category-annual-choice.html">年度推荐</a>
+                <a href="./category-classic-series.html">经典必看</a>
+                <a href="./category-new-hot.html">热门新剧</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 高分剧集大全 · 口碑剧集与精选电视剧</div>
+    </footer>
+    <script src="./assets/hls-global.js"></script>
+    <script src="./assets/movie-index.js"></script>
+    <script src="./assets/site.js"></script>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

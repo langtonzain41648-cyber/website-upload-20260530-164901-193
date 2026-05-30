@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影片搜索-高清欧美影片-热门电影片库-高清影片在线观看</title>
+  <meta name="description" content="搜索高清欧美影片、热门电影片库和精选影片详情页。">
+  <meta name="keywords" content="高清欧美影片,热门电影片库,欧美影片,高清影片,欧美电影,精选影片,热门影片,影片搜索,电影搜索">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./index.html" aria-label="高清欧美影片">
+      <span class="brand-mark">HD</span>
+      <span class="brand-name">高清欧美影片</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="展开导航">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link" href="./categories.html">分类</a>
+      <a class="nav-link" href="./top.html">热播榜</a>
+      <a class="nav-link" href="./library.html">片库索引</a>
+      <a class="nav-link active" href="./search.html">搜索</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-hero compact-hero">
+    <div>
+      <p class="hero-kicker">站内搜索</p>
+      <h1>搜索高清欧美影片</h1>
+      <p>按标题、年份、地区、类型、标签和剧情关键词快速检索影片。</p>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="search-box-panel">
+      <input id="globalSearchInput" type="search" placeholder="输入影片标题、年份、地区、类型或标签">
+      <select id="globalTypeFilter">
+        <option value="">全部类型</option>
+        <option value="电影">电影</option>
+        <option value="剧集">剧集</option>
+      </select>
+    </div>
+    <div class="movie-grid four-cols" id="globalSearchResults"></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">高清欧美影片</div>
+      <p>高清欧美影片页面汇总欧美地区多类型片目，涵盖热门、经典和精选方向，适合分类浏览。</p>
+    </div>
+    <div>
+      <h3>快速导航</h3>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类浏览</a>
+      <a href="./top.html">热播榜</a>
+      <a href="./library.html">片库索引</a>
+    </div>
+    <div>
+      <h3>热门分类</h3>
+      <a href="./category-01.html">欧美精选</a><a href="./category-02.html">热门电影</a><a href="./category-03.html">年度新片</a><a href="./category-04.html">悬疑惊悚</a><a href="./category-05.html">科幻奇幻</a>
+    </div>
+  </div>
+</footer>
+<script src="./assets/site.js"></script>
+<script src="./assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
